@@ -34,13 +34,10 @@ compress_images(
     }
   },
   function (error, completed, statistic) {
-    console.log("-------------");
     if (error) {
+      console.log("------ Error ------");
       console.log(error);
+      console.log("------ /Error ------");
     }
-    if (statistic) {
-      console.log(statistic);
-    }
-    console.log("-------------");
   }
 );
