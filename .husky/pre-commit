@@ -1,1 +1,1 @@
-npm run images-min
+npm run images-min && cp -r dist/. static/ && rm -r dist/
