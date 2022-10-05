@@ -1,0 +1,20 @@
+{
+  "name": "static-bucket-test",
+  "private": true,
+  "engines": {
+    "node": ">=16.14",
+    "pnpm": ">=7.1.0"
+  },
+  "scripts": {
+    "images-min": "node scripts/imageMin.js",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "compress-images": "^2.0.5",
+    "husky": "^8.0.1"
+  },
+  "dependencies": {
+    "gifsicle": "^5.2.1",
+    "pngquant-bin": "^6.0.1"
+  }
+}
