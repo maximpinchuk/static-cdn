@@ -33,7 +33,7 @@ compress_images(
       command: ["--colors", "64", "--use-col=web"]
     }
   },
-  function (error, completed, statistic) {
+  function (error) {
     if (error) {
       console.log("------ Error ------");
       console.log(error);
