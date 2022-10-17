@@ -1,4 +1,4 @@
-const compress_images = require("compress-images");
+import compress_images from "compress-images";
 
 compress_images(
   'static/**/*.{jpg,JPG,jpeg,JPEG,png,svg,gif}',

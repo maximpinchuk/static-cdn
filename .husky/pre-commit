@@ -1,1 +1,16 @@
-npm run images-min && cp -r dist/. static/ && rm -r dist/
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Started"
+npm run images-min
+cp -r dist/. static/
+rm -r dist/
+
+git add '*.jpg' '*.jpeg' '*.png'
+
+# for file in `git diff --cached --name-only | find ./static -name "*.png"`
+# do
+#   echo "Crushing $file"
+# done
+
+# npm test
